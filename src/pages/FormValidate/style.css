@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #575757;
+}
+
+.validate__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.validate__wrapper {
+  width: 500px;
+  height: 500px;
+}
+
+.validate__content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+label.label-required::after {
+  content: "*";
+  margin-left: 3px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  margin-right: 5px;
+}
+
+button {
+  width: 50%;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: hsl(0, 0%, 20%);
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 0%);
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+div.error {
+  font-size: 13px;
+  color: #dc3545;
+}
